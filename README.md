@@ -5,10 +5,12 @@ Downloads YouTube videos to your external NAS over SSH.
 It uses Termux and URL as a argument, as shown on a video:
 
 
-[![Watch the video](https://img.youtube.com/vi/7Y96l3C445E/maxresdefault.jpg)](https://youtu.be/7Y96l3C445E)
+https://github.com/Mis1ify/termux-yt-dlp-androidtv/assets/111151942/2feef88c-ec61-4641-a68b-908f6df93288
+
+
 ## Examples of using
 
-You like that youtube video, and you want to archive it to your local server NAS.
+You like that youtube video, and you want to archive it to your local server NAS. You don't want to turn on your PC just to download that one video, instead your TV can do it for you automatically!
 
 
 ## Requirements
