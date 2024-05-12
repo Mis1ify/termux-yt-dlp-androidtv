@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Set your server's ip address
+ip=192.168.1.100
+
+# Set your server's hostname
+hostname=fabotheplayer-pi
+
+
+ssh $ip -l $hostname -t "./yt-dlp.sh \"$1\""
+exit
