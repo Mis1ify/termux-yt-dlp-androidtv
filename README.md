@@ -12,7 +12,6 @@ https://github.com/Mis1ify/termux-yt-dlp-androidtv/assets/111151942/2feef88c-ec6
 
 You like that youtube video, and you want to archive it to your local server NAS. You don't want to turn on your PC just to download that one video, instead your TV can do it for you automatically!
 
-
 ## Requirements
 
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) as well as `ffmpeg` installed on your server
@@ -50,3 +49,8 @@ We need to be able to connect to our server without providing a password. To do 
 4. In Termux `~` home directory, create a bin directory with `mkdir bin` command
 5. Put `termux-url-opener` in that directory
 6. All done! Termux should now be configured properly. Press 'Share link' in SmartTube or similiar app, select Termux, and your video should be now downloading to your server over SSH!
+
+
+## Will it work on non-androidTV devices?
+It *should* work as long as it is based on Android, like your Android Phone or Tablet, but it's untested.
+
