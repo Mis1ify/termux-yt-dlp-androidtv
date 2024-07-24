@@ -49,7 +49,8 @@ We need to be able to connect to our server without providing a password. To do 
 4. We need to put that script into Termux `/bin` directory. The simplest way would be copying the file from your PC into USB drive, then connecting it to your Android TV. However, some devices like `Mi TV Stick` don't have USB slot, so use ADB instead
 5. In Termux `~` home directory, create a bin directory with `mkdir bin` command
 6. Put `termux-url-opener` in that directory
-7. All done! Termux should now be configured properly. Press 'Share link' in SmartTube or similiar app, select Termux, and your video should be now downloading to your server over SSH!
+7. Type `chmox +x termux-url-opener` to grant executing permissions
+8. All done! Termux should now be configured properly. Press 'Share link' in SmartTube or similiar app, select Termux, and your video should be now downloading to your server over SSH!
 
 
 ## Will it work on non-androidTV devices?
