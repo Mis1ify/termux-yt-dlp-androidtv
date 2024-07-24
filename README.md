@@ -29,7 +29,7 @@ To simplify steps I recommend connecting a keyboard to your Android TV.
 
 We need to be able to connect to our server without providing a password. To do that, we need to generate *SSH key pair*. In order to do that:
 
-4. `ssh-keygen -t rsa 4096 -C "your_device_name"`
+4. `ssh-keygen -C "your_device_name"`
 5. `Enter file in which to save the key (/home/yourusername/.ssh/id_rsa):` Press Enter
 6. `Enter passphrase (empty for no passphrase):` Press Enter
 7. Now, we need to upload your key to the server. We can do it with one command: `ssh-copy-id remote_username@server_ip_address` Replace `remote_username` and `server_ip_address` with your data
