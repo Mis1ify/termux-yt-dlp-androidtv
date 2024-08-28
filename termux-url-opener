@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set your server's ip address
-ip=192.168.1.110
+ip=192.168.1.120
 
 # Set your server's hostname
 hostname=root
