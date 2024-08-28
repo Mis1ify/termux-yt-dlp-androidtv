@@ -12,7 +12,7 @@ https://github.com/Mis1ify/termux-yt-dlp-androidtv/assets/111151942/2feef88c-ec6
 
 You like that youtube video, and you want to archive it to your local server NAS. You don't want to turn on your PC just to download that one video, instead your TV can do it for you automatically!
 
-I'm using this script to put videos from SmartTube straight into my Jellyfin server. It works almost perfect, besides miniatures of videos.
+I'm using this script to put videos from SmartTube straight into my Jellyfin server, it works perfect for that.
 
 ## Requirements
 
