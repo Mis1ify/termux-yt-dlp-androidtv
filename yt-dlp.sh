@@ -1,7 +1,23 @@
 #!/bin/bash
-
+source .venv/bin/activate
 # Set the directory where you want to put your downloaded files
-directory=Media/Media/Inne
+directory=/mnt/media/Media/Inne
+
 
 cd $directory
-yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" $1
+
+# Just donwload the video
+#yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" $1
+
+# Download the video with English and Polish Subtitles
+#yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --write-sub --sub-lang en,pl --embed-metadata --parse-metadata "description:(?s)(?P<meta_comment>.+)" $1
+
+# Download with subs and put video miniature into it, and put videos from playlist to folder if a link is a playlist
+
+if [[ $1 == *"playlist"* ]]; then
+    yt-dlp --embed-thumbnail -o "%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --write-sub --sub-lang en,pl --embed-metadata --parse-metadata "description:(?s)(?P<meta_comment>.+)" "$1"
+    
+else
+
+    yt-dlp --embed-thumbnail -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --write-sub --sub-lang en,pl --embed-metadata --parse-metadata "description:(?s)(?P<meta_comment>.+)" "$1"
+fi
