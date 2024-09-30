@@ -6,7 +6,7 @@ directory=/mnt/media/Media/Inne
 
 cd $directory
 
-# Just donwload the video
+# Just download the video
 #yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" $1
 
 # Download the video with English and Polish Subtitles
